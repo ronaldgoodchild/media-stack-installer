@@ -1,0 +1,17 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  syntax:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse every PowerShell script
+        shell: pwsh
+        run: |
+          $bad = 0
+          Get-ChildItem -Recurse -Include *.ps1,*.psm1 -File | ForEach-Object {
+            $errs = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$null, [ref]$errs)
+            if ($errs) { $bad++; Write-Host "::error file=$($_.FullName)::$($errs[0].Message)" }
+          }
+          if ($bad) { exit 1 }

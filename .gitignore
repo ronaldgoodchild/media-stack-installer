@@ -1,0 +1,9 @@
+*.exe
+*.zip
+bin/
+obj/
+*.log
+
+# Generated at install time - contains API keys and the login password
+state.json
+config/
