@@ -10,6 +10,10 @@ your own indexers.
 
 ![Setup window: choose install and media folders, set a login, pick apps](docs/screenshots/setup.png)
 
+**The status dashboard once it's installed** (demo data; the server runs as a Windows service on port 8090):
+
+![Windows status dashboard: host CPU and RAM, every app's live status and counts, downloads, storage and recent activity](docs/screenshots/dashboard.png)
+
 ## Quick start
 
 **Simplest — no flags, no thinking:** double-click **`start.bat`**. It
