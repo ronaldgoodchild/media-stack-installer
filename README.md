@@ -278,7 +278,7 @@ your own LAN (`-OpenFirewallPorts`, Tailscale funnels, port forwards), keep it s
   actually work here even if wired in. This is two separate things that
   are easy to conflate:
   - **Usenet server/provider** — where you *download* the raw data from
-    (Newshosting, Eweka, Frugal Usenet, etc. — the Getting Started guide
+    (Eweka, Frugal Usenet, etc. — the Getting Started guide
     links a handful of options). This is what
     `-UsenetHost`/`-UsenetUsername`/`-UsenetPassword` already wires in for
     you, and many providers have free trials — see the note above.
