@@ -8,6 +8,7 @@ Reconstructed from the original development history (September 2026).
   - **No default password.** A random 20-character password is generated on first run, shown at the end and stored in `config\state.json`; re-runs reuse it. `-AdminPassword` still overrides it.
   - The setup GUI leaves the password blank by default (blank = generated).
   - Lab-specific paths and addresses removed from comments and docs; MIT license, security policy and CI added.
+  - Setup GUI: checkbox labels were dark-on-dark and unreadable, now light; the window is tall enough to show every option; the media path now defaults to `D:\Media`. Added a setup-window screenshot to the README.
 
 ## [1.x] - 2026-09-11 to 2026-09-19
 - Native Windows install (no Docker) of Prowlarr, Sonarr, Radarr, Lidarr, Readarr, Whisparr, SABnzbd, qBittorrent, Jellyfin and Seerr as real Windows services (NSSM)
