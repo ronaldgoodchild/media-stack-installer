@@ -12,8 +12,13 @@ Add-Type -AssemblyName PresentationFramework
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="REGTeches Media Stack Setup"
-        Height="480" Width="520" WindowStartupLocation="CenterScreen"
+        Height="660" Width="520" WindowStartupLocation="CenterScreen"
         Background="#0b0c10" Foreground="#c5c6c7">
+  <Window.Resources>
+    <Style TargetType="CheckBox">
+      <Setter Property="Foreground" Value="#c5c6c7"/>
+    </Style>
+  </Window.Resources>
   <Grid Margin="15">
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
@@ -31,8 +36,8 @@ Add-Type -AssemblyName PresentationFramework
       <TextBox Name="InstallPathBox" Text="C:\REGTechesMediaStack" Padding="4" Margin="0,0,0,15"/>
 
       <TextBlock Text="Media storage (Movies &amp; TV go here):" Margin="0,0,0,4"/>
-      <TextBox Name="MediaPathBox" Text="\\192.168.1.50\vol3\media" Padding="4" Margin="0,0,0,4"/>
-      <TextBlock Text="A separate drive (e.g. D:\Media) or a mapped/UNC NAS path (e.g. \\192.168.1.50\vol3\media, DS420J). Must already exist and be reachable." FontSize="10" Foreground="#9a9a9a" TextWrapping="Wrap" Margin="0,0,0,15"/>
+      <TextBox Name="MediaPathBox" Text="D:\Media" Padding="4" Margin="0,0,0,4"/>
+      <TextBlock Text="A separate drive (e.g. D:\Media) or a mapped/UNC NAS path (e.g. \\192.168.1.50\vol3\media). Must already exist and be reachable." FontSize="10" Foreground="#9a9a9a" TextWrapping="Wrap" Margin="0,0,0,15"/>
 
       <TextBlock Text="Login for all apps:" Margin="0,0,0,4"/>
       <Grid Margin="0,0,0,15">

@@ -8,6 +8,8 @@ and configured following TRaSH-Guides conventions, with a branded status
 dashboard, Tailscale for remote access, and Prowlarr ready for you to add
 your own indexers.
 
+![Setup window: choose install and media folders, set a login, pick apps](docs/screenshots/setup.png)
+
 ## Quick start
 
 **Simplest — no flags, no thinking:** double-click **`start.bat`**. It
