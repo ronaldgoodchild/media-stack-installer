@@ -10,6 +10,10 @@ your own indexers.
 
 ![Setup window: choose install and media folders, set a login, pick apps](docs/screenshots/setup.png)
 
+**The status dashboard once it's installed** (server address and shares redacted):
+
+![Installed dashboard: storage, every app's live status, recent activity and SMB shares](docs/screenshots/dashboard.png)
+
 ## Quick start
 
 **Simplest — no flags, no thinking:** double-click **`start.bat`**. It
