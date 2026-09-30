@@ -3177,7 +3177,7 @@ $welcomeHtml = @'
 
       <div class="provider-grid">
         <div class="provider" style="--card-accent:#33d69f">
-          <div class="name">Newshosting <span class="badge">WHAT WE USE</span></div>
+          <div class="name">Newshosting</div>
           <div class="note">SSL by default, a built-in search tool, and a long retention window. This is the one running behind the scenes here.</div>
           <a class="visit" href="https://www.newshosting.com" target="_blank" rel="noopener">newshosting.com &rarr;</a>
         </div>
